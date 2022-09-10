@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="css/updates.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- Droptech Plugins Styles -->
+	<link rel="stylesheet" href="css/droptech.css">
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- CSS for IE -->
@@ -46,8 +48,8 @@
             <div class="topnav hidden-xs">
             </div>
             <div class="main-header">
-                <a href="#mobile-menu-01" data-toggle="collapse" class="mobile-menu-toggle">
-                    Mobile Menu Toggle
+                <a href="#mobile-menu-01" data-toggle="collapse" class="mobile-menu-toggle mobileOnly">
+                    <i class="fa fa-bars"></i>
                 </a>
                 <div class="container">
                     <h1 class="navbar-brand">
@@ -55,7 +57,7 @@
                             <img src="images/mainlogo.png" height="60" width="200" alt="Green-Booking-Pro" /> 
                         </a>
                     </h1>
-                    <nav id="main-menu" role="navigation">
+                    <nav id="main-menu" role="navigation" class="desktopOnly">
                         <ul class="menu">
                             <li class="menu-item">
                                 <a href="Step1.html">Home</a>
@@ -100,70 +102,7 @@
         <section id="content">
             <div class="container">
                 <div class="row">
-                    <div class="sidebar col-md-4">
-                        <div class="booking-details travelo-box">
-                            <h2>Booking Details</h2>
-                            <article class="box hotel listing-style1">
-                                <div class="details resdetails">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="well col-md-6">
-                                                <label><em class="fas fa-calendar-alt"></em> Check-in</label><br/>
-                                                <span>05/22/2019</span>
-                                            </div>
-                                            <div class="well col-md-6">
-                                                <label><em class="fas fa-calendar-alt"></em> Check-out</label><br/>
-                                                <span>05/25/2019</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="well col-md-4">
-                                                <label><em class="fas fa-user"></em> Adult</label><br/>
-                                                <span>1</span>
-                                            </div>
-                                            <div class="well col-md-4">
-                                                <label><em class="fas fa-bed"></em> Rooms</label><br/>
-                                                <span>1</span>
-                                            </div>
-                                            <div class="well col-md-4">
-                                                <label><em class="fa fa-child"></em> Kids</label><br/>
-                                                <span>1</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <div class="guest">
-                                <input type="button" class="button btn-large" name="btnmodify" value="Modify">
-                            </div>
-                            <h2>Other Details</h2>
-                            <table class="table table-bordered">
-                                    <tbody><tr>
-                                      <th>Room Type</th>
-                                      <th>No of Rooms</th>
-                                      <th>Price (USD)</th>
-                                    </tr>
-                                    <tr>
-                                      <td>Single Bed Room</td>
-                                      <td class="text-center"> 2 </td>
-                                      <td class="text-center"> 110 </td>
-                                    </tr>
-                                    <tr>
-                                      <td>Double Bed Room</td>
-                                      <td class="text-center"> 2 </td>
-                                      <td class="text-center"> 120 </td>
-                                    </tr>
-                                  </tbody>
-                                  <tfoot>
-                                    <tr><td colspan="2" style="text-align: right;">Total:</td><td class="text-center">230</td></tr>
-                                    <tr><td colspan="2" style="text-align: right;">Tax (10%):</td><td class="text-center">23</td></tr>
-                                    <tr><td colspan="2" style="text-align: right;">Grand Total:</td><td class="text-center"><span class="price pull-left" style="color: #000;"><small>USD</small> 253</span></td></tr></tfoot>
-                                </table>
-                        </div>
-                        
-                    </div>
+                
                     <div id="main" class="col-md-8">
                         <div class="booking-section travelo-box">
                             
@@ -339,6 +278,70 @@
                                 </div>
                             </form>
                         </div>
+                    </div>
+                    <div class="sidebar col-md-4">
+                        <div class="booking-details travelo-box">
+                            <h2>Booking Details</h2>
+                            <article class="box hotel listing-style1">
+                                <div class="details resdetails">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="well col-md-6">
+                                                <label><em class="fas fa-calendar-alt"></em> Check-in</label><br/>
+                                                <span>05/22/2019</span>
+                                            </div>
+                                            <div class="well col-md-6">
+                                                <label><em class="fas fa-calendar-alt"></em> Check-out</label><br/>
+                                                <span>05/25/2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="well col-md-4">
+                                                <label><em class="fas fa-user"></em> Adult</label><br/>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="well col-md-4">
+                                                <label><em class="fas fa-bed"></em> Rooms</label><br/>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="well col-md-4">
+                                                <label><em class="fa fa-child"></em> Kids</label><br/>
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="guest">
+                                <input type="button" class="button btn-large" name="btnmodify" value="Modify">
+                            </div>
+                            <h2>Other Details</h2>
+                            <table class="table table-bordered">
+                                    <tbody><tr>
+                                      <th>Room Type</th>
+                                      <th>No of Rooms</th>
+                                      <th>Price (USD)</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Single Bed Room</td>
+                                      <td class="text-center"> 2 </td>
+                                      <td class="text-center"> 110 </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Double Bed Room</td>
+                                      <td class="text-center"> 2 </td>
+                                      <td class="text-center"> 120 </td>
+                                    </tr>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr><td colspan="2" style="text-align: right;">Total:</td><td class="text-center">230</td></tr>
+                                    <tr><td colspan="2" style="text-align: right;">Tax (10%):</td><td class="text-center">23</td></tr>
+                                    <tr><td colspan="2" style="text-align: right;">Grand Total:</td><td class="text-center"><span class="price pull-left" style="color: #000;"><small>USD</small> 253</span></td></tr></tfoot>
+                                </table>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

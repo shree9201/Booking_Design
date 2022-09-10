@@ -28,8 +28,11 @@
     <link rel="stylesheet" href="css/updates.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/custom.css">
-    <!-- Responsive Styles -->
+    <!-- Droptech Plugins Styles -->
+	<link rel="stylesheet" href="css/droptech.css">
+	<!-- Responsive Styles -->
     <link rel="stylesheet" href="css/responsive.css">
+	
     <!-- CSS for IE -->
     <!--[if lte IE 9]>
         <link rel="stylesheet" type="text/css" href="css/ie.css" />
@@ -48,8 +51,8 @@
             <div class="topnav hidden-xs">
             </div>
             <div class="main-header">
-                <a href="#mobile-menu-01" data-toggle="collapse" class="mobile-menu-toggle">
-                    Mobile Menu Toggle
+                <a href="#mobile-menu-01" data-toggle="collapse" class="mobile-menu-toggle mobileOnly">
+                    <i class="fa fa-bars"></i>
                 </a>
                 <div class="container">
                     <h1 class="navbar-brand">
@@ -57,7 +60,7 @@
                             <img src="images/mainlogo.png" height="60" width="200" alt="Green-Booking-Pro" /> 
                         </a>
                     </h1>
-                    <nav id="main-menu" role="navigation">
+                    <nav id="main-menu" role="navigation" class="desktopOnly">
                         <ul class="menu">
                             <li class="menu-item">
                                 <a href="Step1.html">Home</a>
@@ -105,11 +108,11 @@
                     <div id="main" class="col-md-12">
                         <div class="tab-container style1" id="hotel-main-content">
                         	<div class="hotel-list listing-style3 hotel">
-                        		<article class="box">
+                        		<article class="box boxView">
                                     <figure class="col-sm-5 col-md-4">
                                         <img  src="images/exterior.jpg" alt="">
                                     </figure>
-                                    <div class="details col-sm-7 col-md-8">
+                                    <div class="details col-sm-7 col-md-8 col-xs-12">
                                             <div>
                                                 <h4 class="box-title hotelbox">Inn On The Green Florida<small><i class="fas fa-map-marker-alt"></i> 700 East Burleigh Boulevard, Tavares, FL 32778, USA</small></h4>
                                                 <div class="amenities">
@@ -124,7 +127,7 @@
                         	</div>
        
                         </div>
-                        <div id="hotel-features" class="tab-container">
+                        <div id="hotel-features" class="tab-container boxView">
                             <ul class="tabs">
                                 <li class="active"><a href="#hotel-availability" data-toggle="tab"><i class="fas fa-calendar-alt"></i> Availability</a></li>
                                 <li><a href="#photos-tab" data-toggle="tab"><i class="fas fa-images"></i> Photos</a></li>
@@ -135,9 +138,9 @@
                             	<div class="tab-pane fade" id="map-tab">
                             		<iframe id="ContentPlaceHolder1_Iframe1" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.6214413173216!2d-81.72268968491314!3d28.820352982344115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7bd13daff6209%3A0xfadd70a5c7b65115!2sInn+On+The+Green+Florida!5e0!3m2!1sen!2sin!4v1557043428399!5m2!1sen!2sin"></iframe>
                             	</div>
-                            	<div class="tab-pane fade" id="cancellation-tab"><div class="pricing-table blue box">
+                            	<div class="tab-pane fade" id="cancellation-tab"><div class="pricing-table box">
                             <div class="header clearfix">
-                                <h4 class="box-title"><i class="soap-icon-suitcase circle white-color"></i> <span>Cancel your booking</span></h4>
+                                <h4 class="box-title"><i class="soap-icon-suitcase circle "></i> <span>Cancel your booking</span></h4>
                             </div>
                             <p class="white-color" style="margin-top: 5px;">
                                 Enter below details to cancel reservation.
@@ -155,7 +158,7 @@
                                             <input name="txtLoginEmailId" type="text" id="txtLoginEmailId" class="input-text full-width" style="color:Black;">
                                         </div>
                                     </div>                          
-                            <input type="button" name="btnSearch" value="Search Booking" id="btnSearch" class="button btn-large dark-blue-color" style="background: #FBB31D;">
+                            <input type="button" name="btnSearch" value="Search Booking" id="btnSearch" class="button btn-large">
                         </div></div>
                             	<div class="tab-pane fade" id="photos-tab">
                             		<div id="photos-tab" class="tab-pane fade in active" style="min-height: 500px;">
@@ -253,7 +256,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
+                                        <div class="col-md-12 specialrateSection">
                                         	<a class="button btn-large" data-toggle="collapse" data-target="#specialrate">Special Rates <i class="fa fa-arrow-circle-down"></i></a> 
                                         		<div class="col-md-12 collapse" id="specialrate" >
 	                                        		<div class="col-md-6">
@@ -307,7 +310,7 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <button data-animation-duration="1" data-animation-type="bounce" class="button btn-large text-center full-width icon-check animated" type="submit">Check Availability</button>
+                                                    <button data-animation-duration="1" data-animation-type="bounce" class="button btn-large text-center full-width animated" type="submit">Check Availability <i class="fa fa-check-circle"></i></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -315,413 +318,161 @@
                                     </form>
                                     <h2>Available Rooms</h2>
                                     <div class="room-list listing-style3 hotel">
-                                        <article class="box box-primary box-top">
-                                            <figure class="col-sm-4 col-md-3">
-                                                <a class="hover-effect popup-gallery" href="ajax/roomdetails.html" title=""><img width="230" height="160" src="images/singlebed.jpg" alt=""></a>
-                                            </figure>
-                                            <div class="details col-xs-12 col-sm-8 col-md-9">
-                                                <div>
-                                                    <div>
-                                                        <div class="box-title">
-                                                            <h4 class="title">Single Bed Room</h4>
-                                                            <dl class="description">
-                                                                <dt>Max Guests:</dt>
-                                                                <dd>2 persons / <i class="fa fa-smoking"></i> Smoking</dd>
-                                                            </dl>
-                                                        </div>
-                                                        <div class="amenities">
 
-                                                            <!-- <div class="icon-box style2"><i class="soap-icon-smoking circle"></i>smoking allowed</div> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.</p>
-                                                </div>
-                                            </div>
-                                        </article>
-			<!-- sdfhjhsjkdfhjkshdfjkhsjkdfhdsjkfhjkshdfjhjksdfhf --> 
-										<div class="row">
-											<div class="col-md-12">
-											<div class="smallwell">
-												<div class="row">
-														<div class="col-md-6"><h4 class="title">Best Available Rate</h4>
-															<a href='#MorePrice11' class='soap-popupbox'><span class="badge">Know More >></span></a>
-															<div class="box box-success" id='MorePrice11' style='display:none;width:100%'>
-													            <div class="box-header with-border">
-													              <h3 class="box-title">Best Available Rate</h3>
-                                                                  <div class="box-tools pull-right">
-                                                                    <button type="button" class="button btn-small text-center btn-box-tool boxclose"><i class="fa fa-times"></i>
-                                                                    </button>
-                                                                  </div>
-													              <!-- /.box-tools -->
-													            </div>
-													            <!-- /.box-header -->
-													            <div class="box-body">
-												            		<p>Reservation Policies: Cancel before 4PM day of arrival to avoid a 1 night plus tax charge. Reservation will be held until 4pm date of arrival.</p>
-													            	<p>1 Adult, 0 Children × 2 Night For USD 120.</p>
-													            	<hr>
-													              	<table class="table table-bordered">
-														                <tbody><tr>
-														                  <th>Date</th>
-														                  <th>Price (USD)</th>
-														                </tr>
-														                <tr>
-														                  <td>TUE, 05/21/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>WED, 05/22/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>Estimated Tax (10%)</td>
-														                  <td class="text-center"> 12 </td>
-														                </tr>
-														                <tr>
-														                  <td>Final Payable</td>
-														                  <td class="text-center"> USD 132 </td>
-														                </tr>
-														              </tbody>
-														          	</table>
-														          	<hr>
-													            </div>
-													            <!-- /.box-body -->
-													        </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										<!-- Room Types Section Start-->
+										<div class="ui-330">											
+											<div class="row">
+												<div class="col-md-6">
+													<div class="item">
+														<a class="hover-effect popup-gallery" href="ajax/roomdetails.html" title=""><img width="230" height="160" src="images/singlebed.jpg" alt=""></a>
+														<div class="content">
+															<a href="#" class="icon bg-blue"><i class="fa fa-bed"></i></a><br><br>
+															<h3><a href="#">Single Bed Room</a></h3><hr>
+															<dl class="description">
+																<dt>Max Guests:</dt>
+																<dd>2 persons / <i class="fa fa-smoking"></i> Smoking</dd>
+															</dl>																
+															<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.</p>
+															<hr>
+															<div class="ui-139">
+																<div class="ui-item">
+																	<div class="ui-heading clearfix">
+																		<h2><a href="#">Best Available Rate</a></h2>
+																		<h3 class="orange"><span></span>100<span>USD/NIGHT</span> <a href='#MorePrice11' class='soap-popupbox'><span class="btn btn-white"><i class="fa fa-info"></i></span></a></h3>
+																	</div>																					
+																	<div class="ui-border bg-blue"></div>
+																	<a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
+																</div>	
+																
+																<div class="ui-item">
+																	<div class="ui-heading clearfix">
+																		<h2><a href="#">AAA Rates</a></h2>
+																		<h3 class="orange"><span></span>90<span>USD/NIGHT</span> <a href='#MorePrice11' class='soap-popupbox'><span class="btn btn-white"><i class="fa fa-info"></i></span></a></h3>
+																	</div>																					
+																	<div class="ui-border bg-blue"></div>
+																	<a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
+																</div>	
+
+																<div class="ui-item">
+																	<div class="ui-heading clearfix">
+																		<h2><a href="#">Book Now Save 20%</a></h2>
+																		<h3 class="orange"><span></span>80<span>USD/NIGHT</span> <a href='#MorePrice11' class='soap-popupbox'><span class="btn btn-white"><i class="fa fa-info"></i></span></a></h3>
+																	</div>																					
+																	<div class="ui-border bg-blue"></div>
+																	<a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
+																</div>	
+
+															</div>																			
 														</div>
-														<div class="col-md-3">
-															<div class="price-section">
-		                                                        <span class="price">100<br><small>USD/NIGHT</small></span>
-		                                                    </div>
-														</div>
-														<div class="col-md-3">
-															<a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
-														</div>	
+													</div>
 												</div>
-											</div>
-											<div class="smallwell">
-												<div class="row">
-														<div class="col-md-6"><h4 class="title">AAA Rates</h4>
-														<a href='#MorePrice12' class='soap-popupbox'><span class="badge">Know More >></span></a>
-															<div class="box box-success" id='MorePrice12' style='display:none;width:100%'>
-													            <div class="box-header with-border">
-													              <h3 class="box-title">Discounted rate for AAA members</h3>
-                                                                  <div class="box-tools pull-right">
-                                                                    <button type="button" class="button btn-small text-center btn-box-tool boxclose"><i class="fa fa-times"></i>
-                                                                    </button>
-                                                                  </div>
-													              <!-- /.box-tools -->
-													            </div>
-													            <!-- /.box-header -->
-													            <div class="box-body">
-													            	<p>Reservation Policies: Cancel before 4PM day of arrival to avoid a 1 night plus tax charge. Reservation will be held until 4pm date of arrival. Valid identification required at check-in.</p>
-													            	<p>1 Adult, 0 Children × 2 Night For USD 120.</p>
-													            	<hr>
-													              	<table class="table table-bordered">
-														                <tbody><tr>
-														                  <th>Date</th>
-														                  <th>Price (USD)</th>
-														                </tr>
-														                <tr>
-														                  <td>TUE, 05/21/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>WED, 05/22/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>Estimated Tax (10%)</td>
-														                  <td class="text-center"> 12 </td>
-														                </tr>
-														                <tr>
-														                  <td>Final Payable</td>
-														                  <td class="text-center"> USD 132 </td>
-														                </tr>
-														              </tbody>
-														          	</table>
-														          	<hr>
-													            </div>
-													            <!-- /.box-body -->
-													        </div>
-													    </div>
-														<div class="col-md-3">
-															<div class="price-section">
-		                                                        <span class="price">90<br><small>USD/NIGHT</small></span>
-		                                                    </div>
+
+												<div class="col-md-6">
+													<div class="item">
+														<a class="hover-effect popup-gallery" href="ajax/roomdetails.html" title=""><img width="230" height="160" src="images/singlebed.jpg" alt=""></a>
+														<div class="content">
+															<a href="#" class="icon bg-blue"><i class="fa fa-bed"></i></a><br><br>
+															<h3><a href="#">Double Bed Room</a></h3><hr>
+															<dl class="description">
+																<dt>Max Guests:</dt>
+																<dd>4 persons / <i class="fa fa-smoking"></i> NO Smoking</dd>
+															</dl>																
+															<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.</p>
+															<hr>
+															<div class="ui-139">
+																<div class="ui-item">
+																	<div class="ui-heading clearfix">
+																		<h2><a href="#">Best Available Rate</a></h2>
+																		<h3 class="orange"><span></span>200<span>USD/NIGHT</span> <a href='#MorePrice11' class='soap-popupbox'><span class="btn btn-white"><i class="fa fa-info"></i></span></a></h3>
+																	</div>																					
+																	<div class="ui-border bg-blue"></div>
+																	<a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
+																</div>	
+																
+																<div class="ui-item">
+																	<div class="ui-heading clearfix">
+																		<h2><a href="#">AAA Rates</a></h2>
+																		<h3 class="orange"><span></span>180<span>USD/NIGHT</span> <a href='#MorePrice11' class='soap-popupbox'><span class="btn btn-white"><i class="fa fa-info"></i></span></a></h3>
+																	</div>																					
+																	<div class="ui-border bg-blue"></div>
+																	<a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
+																</div>	
+
+																<div class="ui-item">
+																	<div class="ui-heading clearfix">
+																		<h2><a href="#">Book Now Save 20%</a></h2>
+																		<h3 class="orange"><span></span>160<span>USD/NIGHT</span> <a href='#MorePrice11' class='soap-popupbox'><span class="btn btn-white"><i class="fa fa-info"></i></span></a></h3>
+																	</div>																					
+																	<div class="ui-border bg-blue"></div>
+																	<a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
+																</div>	
+
+															</div>																			
 														</div>
-														<div class="col-md-3">
-															<div class="action">
-												                <a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
-												            </div>
-														</div>	
-												</div>
-											</div>
-											<div class="smallwell">
-												<div class="row">
-														<div class="col-md-6"><h4 class="title">Book Now Save 20%</h4>
-														<a href='#MorePrice13' class='soap-popupbox'><span class="badge badge-danger">Know More >></span></a>
-															<div class="box box-success" id='MorePrice13' style='display:none;width:100%'>
-													            <div class="box-header with-border">
-													              <h3 class="box-title">Book Now Save 10 Percent</h3>
-                                                                  <div class="box-tools pull-right">
-                                                                    <button type="button" class="button btn-small text-center btn-box-tool boxclose"><i class="fa fa-times"></i>
-                                                                    </button>
-                                                                  </div>
-													              <!-- /.box-tools -->
-													            </div>
-													            <!-- /.box-header -->
-													            <div class="box-body">
-																	<p>Reservation Policies: Cancel before 4PM day of arrival to avoid a 1 night plus tax charge. Reservations must be guaranteed with a credit card.</p>
-													            	<p>1 Adult, 0 Children × 2 Night For USD 120.</p>
-													            	<hr>
-													              	<table class="table table-bordered">
-														                <tbody><tr>
-														                  <th>Date</th>
-														                  <th>Price (USD)</th>
-														                </tr>
-														                <tr>
-														                  <td>TUE, 05/21/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>WED, 05/22/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>Estimated Tax (10%)</td>
-														                  <td class="text-center"> 12 </td>
-														                </tr>
-														                <tr>
-														                  <td>Final Payable</td>
-														                  <td class="text-center"> USD 132 </td>
-														                </tr>
-														              </tbody>
-														          	</table>
-														          	<hr>
-													            </div>
-													            <!-- /.box-body -->
-													        </div>
-													    </div>
-														<div class="col-md-3">
-															<div class="price-section">
-		                                                        <span class="price">80<br><small>USD/NIGHT</small></span>
-		                                                    </div>
-														</div>
-														<div class="col-md-3">
-															<div class="action">
-												                <a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
-												            </div>
-														</div>	
+													</div>
 												</div>
 											</div>
 										</div>
-										</div>                                       
-										<article class="box box-primary box-top">
-                                            <figure class="col-sm-4 col-md-3">
-                                                <a class="hover-effect popup-gallery" href="ajax/roomdetails.html" title=""><img width="230" height="160" src="images/doublebed.jpg" alt=""></a>
-                                            </figure>
-                                            <div class="details col-xs-12 col-sm-8 col-md-9">
-                                                <div>
-                                                    <div>
-                                                        <div class="box-title">
-                                                            <h4 class="title">Double Bed Room</h4>
-                                                            <dl class="description">
-                                                                <dt>Max Guests:</dt>
-                                                                <dd>4 persons / <i class="fa fa-smoking-ban"></i> Non Smoking</dd>
-                                                            </dl> 
-                                                        </div>
-                                                        <div class="amenities">
-                                                            <!-- <i class="soap-icon-wifi circle"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.</p>
-                                                </div>
-                                            </div>
-                                        </article>
-			<!-- sdfhjhsjkdfhjkshdfjkhsjkdfhdsjkfhjkshdfjhjksdfhf --> 
-										<div class="row">
-											<div class="col-md-12">
-											<div class="smallwell">
-												<div class="row">
-														<div class="col-md-6"><h4 class="title">Best Available Rate</h4>
-															<a href='#MorePrice21' class='soap-popupbox'><span class="badge">Know More >></span></a>
-															<div class="box box-success" id='MorePrice21' style='display:none;width:100%'>
-													            <div class="box-header with-border">
-													              <h3 class="box-title">Best Available Rate</h3>
-                                                                  <div class="box-tools pull-right">
-                                                                    <button type="button" class="button btn-small text-center btn-box-tool boxclose"><i class="fa fa-times"></i>
-                                                                    </button>
-                                                                  </div>
-													              <!-- /.box-tools -->
-													            </div>
-													            <!-- /.box-header -->
-													            <div class="box-body">
-												            		<p>Reservation Policies: Cancel before 4PM day of arrival to avoid a 1 night plus tax charge. Reservation will be held until 4pm date of arrival.</p>
-													            	<p>1 Adult, 0 Children × 2 Night For USD 120.</p>
-													            	<hr>
-													              	<table class="table table-bordered">
-														                <tbody><tr>
-														                  <th>Date</th>
-														                  <th>Price (USD)</th>
-														                </tr>
-														                <tr>
-														                  <td>TUE, 05/21/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>WED, 05/22/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>Estimated Tax (10%)</td>
-														                  <td class="text-center"> 12 </td>
-														                </tr>
-														                <tr>
-														                  <td>Final Payable</td>
-														                  <td class="text-center"> USD 132 </td>
-														                </tr>
-														              </tbody>
-														          	</table>
-														          	<hr>
-													            </div>
-													            <!-- /.box-body -->
-													        </div>
 
-														</div>
-														<div class="col-md-3">
-															<div class="price-section">
-		                                                        <span class="price">200<br><small>USD/NIGHT</small></span>
-		                                                    </div>
-														</div>
-														<div class="col-md-3">
-															<a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
-														</div>	
-												</div>
+										<!-- Popup contenet-->
+										<div class="box box-success" id='MorePrice11' style='display:none;width:100%'>
+											<div class="box-header with-border">
+											  <h3 class="box-title">Best Available Rate</h3>
+											  <div class="box-tools pull-right">
+												<button type="button" class="button btn-small text-center btn-box-tool boxclose"><i class="fa fa-times"></i>
+												</button>
+											  </div>
+											  <!-- /.box-tools -->
 											</div>
-											<div class="smallwell">
-												<div class="row">
-														<div class="col-md-6"><h4 class="title">AAA Rates</h4>
-														<a href='#MorePrice22' class='soap-popupbox'><span class="badge">Know More >></span></a>
-															<div class="box box-success" id='MorePrice22' style='display:none;width:100%'>
-													            <div class="box-header with-border">
-													              <h3 class="box-title">Discounted rate for AAA members</h3>
-                                                                  <div class="box-tools pull-right">
-                                                                    <button type="button" class="button btn-small text-center btn-box-tool boxclose"><i class="fa fa-times"></i>
-                                                                    </button>
-                                                                  </div>
-													              <!-- /.box-tools -->
-													            </div>
-													            <!-- /.box-header -->
-													            <div class="box-body">
-													            	<p>Reservation Policies: Cancel before 4PM day of arrival to avoid a 1 night plus tax charge. Reservation will be held until 4pm date of arrival. Valid identification required at check-in.</p>
-													            	<p>1 Adult, 0 Children × 2 Night For USD 120.</p>
-													            	<hr>
-													              	<table class="table table-bordered">
-														                <tbody><tr>
-														                  <th>Date</th>
-														                  <th>Price (USD)</th>
-														                </tr>
-														                <tr>
-														                  <td>TUE, 05/21/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>WED, 05/22/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>Estimated Tax (10%)</td>
-														                  <td class="text-center"> 12 </td>
-														                </tr>
-														                <tr>
-														                  <td>Final Payable</td>
-														                  <td class="text-center"> USD 132 </td>
-														                </tr>
-														              </tbody>
-														          	</table>
-														          	<hr>
-													            </div>
-													            <!-- /.box-body -->
-													        </div>
-													    </div>
-														<div class="col-md-3">
-															<div class="price-section">
-		                                                        <span class="price">180<br><small>USD/NIGHT</small></span>
-		                                                    </div>
-														</div>
-														<div class="col-md-3">
-															<div class="action">
-												                <a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
-												            </div>
-														</div>	
-												</div>
-											</div>
-											<div class="smallwell">
-												<div class="row">
-														<div class="col-md-6"><h4 class="title">Book Now Save 20%</h4>
-														<a href='#MorePrice23' class='soap-popupbox'><span class="badge badge-danger">Know More >></span></a>
-															<div class="box box-success" id='MorePrice23' style='display:none;width:100%'>
-													            <div class="box-header with-border">
-													              <h3 class="box-title">Book Now Save 10 Percent</h3>
-                                                                  <div class="box-tools pull-right">
-                                                                    <button type="button" class="button btn-small text-center btn-box-tool boxclose"><i class="fa fa-times"></i>
-                                                                    </button>
-                                                                  </div>
-													              <!-- /.box-tools -->
-													            </div>
-													            <!-- /.box-header -->
-													            <div class="box-body">
-																	<p>Reservation Policies: Cancel before 4PM day of arrival to avoid a 1 night plus tax charge. Reservations must be guaranteed with a credit card.</p>
-													            	<p>1 Adult, 0 Children × 2 Night For USD 120.</p>
-													            	<hr>
-													              	<table class="table table-bordered">
-														                <tbody><tr>
-														                  <th>Date</th>
-														                  <th>Price (USD)</th>
-														                </tr>
-														                <tr>
-														                  <td>TUE, 05/21/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>WED, 05/22/2019</td>
-														                  <td class="text-center"> 60 </td>
-														                </tr>
-														                <tr>
-														                  <td>Estimated Tax (10%)</td>
-														                  <td class="text-center"> 12 </td>
-														                </tr>
-														                <tr>
-														                  <td>Final Payable</td>
-														                  <td class="text-center"> USD 132 </td>
-														                </tr>
-														              </tbody>
-														          	</table>
-														          	<hr>
-													            </div>
-													            <!-- /.box-body -->
-													        </div>
-													    </div>
-														<div class="col-md-3">
-															<div class="price-section">
-		                                                        <span class="price">160<br><small>USD/NIGHT</small></span>
-		                                                    </div>
-														</div>
-														<div class="col-md-3">
-															<div class="action">
-												                <a class="button btn-large full-width text-center" title="" href="#">Select Rate</a>
-												            </div>
-														</div>	
-												</div>
-											</div>
+											<!-- /.box-header -->
+											<div class="box-body">
+												<p>Reservation Policies: Cancel before 4PM day of arrival to avoid a 1 night plus tax charge. Reservation will be held until 4pm date of arrival.</p>
+												<p>1 Adult, 0 Children × 2 Night For USD 120.</p>
+												<hr>
+												  <table class="table table-bordered">
+													<tbody><tr>
+													  <th>Date</th>
+													  <th>Price (USD)</th>
+													</tr>
+													<tr>
+													  <td>TUE, 05/21/2019</td>
+													  <td class="text-center"> 60 </td>
+													</tr>
+													<tr>
+													  <td>WED, 05/22/2019</td>
+													  <td class="text-center"> 60 </td>
+													</tr>
+													<tr>
+													  <td>Estimated Tax (10%)</td>
+													  <td class="text-center"> 12 </td>
+													</tr>
+													<tr>
+													  <td>Final Payable</td>
+													  <td class="text-center"> USD 132 </td>
+													</tr>
+												  </tbody>
+												  </table>
+												  <hr>
+											</div>											
 										</div>
-										</div>  
-<!-- sdfhjhsjkdfhjkshdfjkhsjkdfhdsjkfhjkshdfjhjksdfhf -->
-
+										<!-- Room Types Section END-->
 
                                     </div>
                                 </div>

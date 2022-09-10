@@ -2,3 +2,305 @@
  * Title:   Custom Style File
  * Author:  https://themeforest.net/user/soaptheme 
  */
+
+ /*********************************************************
+/* File Name        : droptech-responsive.css
+// Craeted By       : Vishwajeet Mahadik
+// Created Date     : 06-09-2022
+// File Modified By : Vishwajeet Mahadik
+// Modify  Date     : 06-09-2022
+/* Description      : This is droptech build responsive main file
+/**********************************************************/
+
+/*
+1	#102E51
+2	#455B83
+3	#E1F1FF
+4	#D9A21B	
+*/
+
+@CHARSET "ISO-8859-1";
+    .mobileOnly {display: none;}
+	.tableOnly{display: none;}
+	.desktopOnly{display: none;}
+
+.button {
+	background-color: #D9A21B!important;
+}
+.button:hover , .button:active , .button.active {
+	background-color: #102E51!important;
+}
+section#content {
+	background-color: #E1F1FF;
+}
+.mobile-menu-toggle i {
+	font-size: 3em;
+    padding: 15px;
+    float: right;
+    background: #fff;
+    color: #D9A21B;	
+}
+#mobile-primary-menu {
+	padding: 10px;
+}
+#mobile-primary-menu li{
+    position: relative;
+    padding: 10px;
+    font-size: 1.5em;
+    background: #112e51;
+    color: #fff;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+#mobile-primary-menu li:hover{
+	background:#fff;
+    color: #112e51;
+	cursor: pointer;
+	font-size: 2em;
+}
+.boxView {
+	margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #455B83;
+    border-radius: 15px;	
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.sidebar > div, #main.col-md-8 > div{
+	padding: 10px;
+    border: 1px solid #455B83;
+    border-radius: 15px;	
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+h2 {
+	color: #455B83!important;
+    font-size: 2.3em;
+}
+h4{
+	color: #D9A21B!important;
+	text-align: left;
+}
+.well {
+	margin: 2% 1%;
+    width: 98%;
+    display: inline-block;
+	border-color: #E1F1FF;
+}
+.well label{
+	font-size: 1em;
+	color: #D9A21B!important;
+}
+.well span{
+	font-size: 1.5em;
+	color: #455B83!important;
+}
+form label {
+	top: 12px;
+    left: 10px;
+    position: relative;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    font-size: 1em;
+    z-index: 999;
+}
+form .checkbox label {
+	position: initial;    
+}
+input.input-text, select, textarea, span.custom-select {
+	background-color: #fff;
+}
+#logo {
+    width: 200px;
+    height: auto;
+}
+img {
+	border: 3px solid #E1F1FF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow:#102E51 0px 20px 30px -10px;
+}
+img.no {
+	border: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	box-shadow:#102E51 0px 0px 0px 0px;
+}
+.table.mb-0{
+	margin-bottom: 0;
+}
+.table-responsive {
+	overflow: hidden;
+}
+#invoiceView {
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    -webkit-box-shadow: 0 0 0.5cm rgb(0 0 0 / 50%);
+    box-shadow: 0 0 0.5cm rgb(0 0 0 / 50%);
+    background: url(../img/svg/pattern-1.svg) no-repeat center bottom;
+    background-size: cover;
+    padding: 4rem;
+    position: relative;
+}
+.tab-container ul.tabs li.active > a, .tab-container ul.tabs li:hover > a{
+	-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.boxView .tab-pane {
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.tab-container ul.tabs li.active > a{
+    color: #112e51;
+    font-size: 1.5em;
+    background: #fff;
+}
+#hotel-availability .update-search, #cruise-availability .update-search  , .pricing-table{
+    border: 1px solid #112e51;
+    background: #fff;
+    margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#hotel-availability .col-md-6 .col-md-6 , #hotel-availability .col-md-6 .col-md-4 {
+	margin-bottom: 20px;
+}
+.box.box-primary {
+	border-top-color: #112e51;;
+}
+#hotel-availability .room-list > article, #cruise-availability .room-list > article {
+	padding: 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#hotel-availability .room-list .box-title dt, #cruise-availability .room-list .box-title dt, #cruise-food-dinning .food-dinning-list .box-title dt , dd i{
+	color: #D9A21B;
+}
+.badge {
+	background-color:#455B83;
+}
+.smallwell {
+	padding: 10px;
+    margin-top: 20px;
+    background-color: #E1F1FF;
+    border: 1px solid #112e51;
+    border-radius: 4px;
+}
+.price {
+	color: #112e51;
+	font-weight: bold;
+}
+.price small {
+	color: #D9A21B;
+}
+.smallwell:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.hover-effect img {
+	width: 100%;
+	height: auto;
+}
+.smallwell:hover .price{
+	font-size: 3em;
+	transition:1s;	
+}
+.radio input[type=radio] {
+	margin: 0;	
+}
+.radio label {
+	padding:  0 10px;
+}
+.radio label:hover {
+	background-color: aliceblue;
+
+}
+.specialrateSection {
+	border: 1px solid #112e51;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: auto;
+	max-width: 600px;
+	padding: 5px;
+}
+
+.room-list {
+
+}
+.datepicker-wrap:after  ,
+.selector span.custom-select:before ,
+.ui-datepicker .ui-datepicker-header, 
+.image-carousel.style1 .flex-direction-nav li a{
+	background-color: #D9A21B;
+}
+/* =============================================================================*/
+ /* All type of mobile screen resolution common factor css
+ /* =============================================================================*/
+ @media (min-width: 320px) and (max-width: 	767px) {
+	.mobileOnly {display: block;}
+	.tableOnly{display: block;}
+	.desktopOnly{display: none;}
+.desktop-right-align {
+	float: none;
+}
+}
+
+/* =============================================================================*/
+/* Part-I  Very small devices means Resolution renge (320-480)*/
+/* =============================================================================*/
+ @media (min-width: 320px) and (max-width: 480px) {
+	.mobileOnly {display: block;}
+	.tableOnly{display: none;}
+	.desktopOnly{display: none;}
+}
+
+/* =============================================================================*/
+ /* Part-II  Medium devices means Resolution range (481-800)*/
+ /* =============================================================================*/
+ @media (min-width: 481px) and (max-width: 800px) {
+.mobileOnly {display: block;}
+	.tableOnly{display: none;}
+	.desktopOnly{display: none;}
+}
+
+/* =============================================================================*/
+ /* Part-III  Tablet devices means Resolution range (801-1020)*/
+ /* =============================================================================*/
+ @media (min-width: 320px) and (max-width: 990px) {
+	.mobileOnly {display: block;}
+	.tableOnly{display: block;}
+	.desktopOnly{display: none;}
+	.listing-style3.hotel figure img {
+		width: 100%;
+	}
+	.tab-container ul.tabs li > a, .tab-container ul.tabs li:hover > a {
+		font-size: 1.5em;
+	}
+	.tab-container ul.tabs li.active > a, .tab-container ul.tabs li:hover > a {
+		background: #D9A21B;
+		color: #fff;
+	}
+}
+
+ /* Extra media query created by vishwajeet for extra landscape tablet view */
+ @media (min-width: 768px) and (max-width: 960px) {
+.mobileOnly {display: none;}
+	.tableOnly{display: block;}
+	.desktopOnly{display: none;}
+ }
+@media (min-width: 320px) and (max-width: 768px) {
+ 
+ }
+ @media(min-width: 767px){
+ }
+ @media (max-width:500px){
+
+}
+@media (max-width:1200px){
+
+}
+/* End file code */
