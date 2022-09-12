@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Theme Styles -->
-    <link rel="stylesheet" media="all" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen,print" href="css/bootstrap.min.css">
     <link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/animate.min.css">
@@ -23,14 +23,15 @@
     <!-- Main Style -->
     <link id="main-style" media="all" rel="stylesheet" href="css/style-dark-blue.css">
     <!-- Updated Styles -->
-    <link rel="stylesheet" media="all" href="css/updates.css">
+    <link rel="stylesheet" media="screen,print" href="css/updates.css">
     <!-- Custom Styles -->
-    <link rel="stylesheet" media="all" href="css/custom.css">
+    <link rel="stylesheet" media="screen,print" href="css/custom.css">
     <!-- Droptech Plugins Styles -->
 	<link rel="stylesheet" media="all" href="css/droptech.css">
     <!-- Responsive Styles -->
     <link rel="stylesheet" media="all" href="css/responsive.css">
-    <link rel="stylesheet" media="all" href="http://www.1menus.com/theme/b2b/css/page-invoice.css"/>
+    
+    <link rel="stylesheet" media="print" href="http://www.1menus.com/theme/b2b/css/page-invoice.css"/>
     <!-- CSS for IE -->
     <!--[if lte IE 9]>
         <link rel="stylesheet" type="text/css" href="css/ie.css" />
@@ -49,55 +50,17 @@
             <div class="topnav hidden-xs">
             </div>
             <div class="main-header">
-                <a href="#mobile-menu-01" data-toggle="collapse" class="mobile-menu-toggle mobileOnly">
-                    <i class="fa fa-bars"></i>
-                </a>
+                
                 <div class="container">
                     <h1 class="navbar-brand">
                         <a href="Step1.html" title="Green-Booking-Pro">
                             <img src="images/mainlogo.png" height="60" width="200" alt="Green-Booking-Pro" /> 
                         </a>
                     </h1>
-                    <nav id="main-menu" role="navigation" class="desktopOnly">
-                        <ul class="menu">
-                            <li class="menu-item">
-                                <a href="Step1.html">Home</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="Step1.html">Amenities</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="Step1.html">Attraction</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="Step1.html">Reservation</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="Step1.html">Golf Courses</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    
                 </div>
                 
-                <nav id="mobile-menu-01" class="mobile-menu collapse">
-                    <ul id="mobile-primary-menu" class="menu">
-                        <li class="menu-item">
-                            <a href="Step1.html">Home</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="Step1.html">Amenities</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="Step1.html">Attraction</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="Step1.html">Reservation</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="Step1.html">Golf Courses</a>
-                        </li>
-                    </ul>
-                </nav>
+               
             </div>
         </header>
         <section id="content">
@@ -124,8 +87,9 @@
                        <br><br>
 
 
-
-                        <div class="container-fluid invoice-container bg-white" id="invoiceView" name="invoice-INV-00000013"> 
+                       <div class="container" id="invoiceView">
+                        
+                        <div class="container-fluid invoice-container bg-white"   name="invoice-INV-00000013"> 
                             <!-- Header -->
                             <header>
                               <div class="row align-items-center">
@@ -159,8 +123,8 @@
                               <div class="row">
                                 
                                
-                                <div class="col-sm-12">
-                                  <div class="row">
+                                
+                                
                                     <div class="col-sm-4"> <strong>Check In:</strong>
                                       <p>23-07-2022 00:00 AM</p>
                                     </div>
@@ -179,31 +143,34 @@
                                    <div class="col-sm-4"> <strong>Child:</strong>
                                       <p>0</p>
                                     </div>
-                                  </div>
-                                </div>
+                                
+                                
                               </div>
                               <div class="card">
                                 
                                 <div class="card-body p-0">
                                   <div class="table-responsive">
+                                    
+                                    
+                                    
+
                                     <table class="table mb-0">
                                       <thead class="card-header">
                                       <tr>
-                                        <td class="col-1"><strong>&nbsp;</strong></td>
-                                        <td class="col-4"><strong>Particular</strong></td>
-                                        <td class="col-2 text-right"><strong>No Of Rooms</strong></td>
-                                        <td class="col-2 text-right"><strong>Price</strong></td>                                        
-                                        <td class="col-2 text-right"><strong>Total</strong></td>
+                                        <td class="srno" width="5%"><strong>Sr.No</strong></td>
+                                        <td class="" width="50%"><strong>Particular</strong></td>
+                                        <td class=" text-right"  width="5%"><strong>No Of Rooms</strong></td>
+                                        <td class="text-right"  width="20%"><strong>Price</strong></td>                                        
+                                        <td class=" text-right"  width="20%"><strong>Total</strong></td>
                                       </tr>
                                     </thead>
                                       <tbody>
                                         <tr>
-                                          <td class="col-1">1</td>
-                                          <td class="col-4">Single Bed Room <br>Rate Type: Best Available Rate	</td>
-                                          <td class="col-2 text-right">2</td>
-                                          <td class="col-2 text-right">1200</td>
-                                          
-                                          <td class="col-2 text-right bold">1118</td>
+                                          <td class="" width="5%">1</td>
+                                          <td class="" width="45%">Single Bed Room <br>Rate Type: Best Available Rate	</td>
+                                          <td class="text-right" width="10%">2</td>
+                                          <td class=" text-right" width="15%">1200</td>                                          
+                                          <td class="text-right bold"  width="25%">1118</td>
                                         </tr>
                                         <tr>
                                             <td class="col-1">2</td>
@@ -213,65 +180,72 @@
                                           
                                             <td class="col-2 text-right bold">3600</td>
                                           </tr>
-                                        <tr><td colspan="5"></td></tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <p class="text-1 text-muted" style="text-align: left;"><strong>Please Note:</strong> 
+                                                    <br><b>Cancellation Policy : </b>
+                                                        You can cancel the reservation only if cancellation is allowed based on cancellation criteria set for room you have selected.
+                                                    <br><b>Hotel Policy : </b>
+                                                        Valid photo ID and credit card is required at the time of check-in. Please note that all Special Requests are subject to availability and additional charges may apply. Pets not allowed.
+                                                </p>
+
+                                            </td>
+                                            <td colspan="2">
+                                                <table class="table table-clean">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                <strong>Subtotal</strong>
+                                                            </td>
+                                                            <td class="text-right">USD 3600.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                <strong>TAX (10%)</strong>
+                                                            </td>
+                                                            <td class="text-right">USD 360.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                <strong>Discount (5%)</strong>
+                                                            </td>
+                                                            <td class="text-right">USD 60.00</td>
+                                                        </tr>
+                                                        <tr class="table-scale-border-top border-left-0 border-right-0 border-bottom-0">
+                                                            <td class="text-left keep-print-font">
+                                                                <h4 class="m-0 fw-700 h2 keep-print-font color-primary-700">Total</h4>
+                                                            </td>
+                                                            <td class="text-right keep-print-font">
+                                                                <h4 class="m-0 fw-700 h2 keep-print-font">USD 3900.00</h4>
+                                                            </td>
+                                                        </tr>                                                   
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
                                       </tbody>                                      
                                     </table>
                                     <div class="row">
-                                        <div class="col-sm-4 ml-sm-auto pull-right">
-                                            <table class="table table-clean">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="text-left">
-                                                            <strong>Subtotal</strong>
-                                                        </td>
-                                                        <td class="text-right">USD 3600.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-left">
-                                                            <strong>TAX (10%)</strong>
-                                                        </td>
-                                                        <td class="text-right">USD 360.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-left">
-                                                            <strong>Discount (5%)</strong>
-                                                        </td>
-                                                        <td class="text-right">USD 60.00</td>
-                                                    </tr>
-                                                    <tr class="table-scale-border-top border-left-0 border-right-0 border-bottom-0">
-                                                        <td class="text-left keep-print-font">
-                                                            <h4 class="m-0 fw-700 h2 keep-print-font color-primary-700">Total</h4>
-                                                        </td>
-                                                        <td class="text-right keep-print-font">
-                                                            <h4 class="m-0 fw-700 h2 keep-print-font">USD 3900.00</h4>
-                                                        </td>
-                                                    </tr>                                                   
-                                                </tbody>
-                                            </table>
+                                        <div class="col-sm-4 ml-sm-auto pull-right" style="float: right;width: 30%;">
+                                            
                                         </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <br>
-                              <hr>
-                              <p class="text-1 text-muted"><strong>Please Note:</strong> 
-                                <br><b>Cancellation Policy : </b>
-                                    You can cancel the reservation only if cancellation is allowed based on cancellation criteria set for room you have selected.
-                                <br><b>Hotel Policy : </b>
-                                    Valid photo ID and credit card is required at the time of check-in. Please note that all Special Requests are subject to availability and additional charges may apply. Pets not allowed.
-                            </p>
                             </main>
                             <!-- Footer -->
                             <footer class="text-center">
                               <p class="text-1"><strong>NOTE :</strong> This is computer generated receipt and does not require physical signature.</p>
                             </footer>
                         </div>
+                        
+                        </div>
                         <div class="btn-group btn-group-sm d-print-none"> <a onclick="prniting();" class="btn btn-light border text-black-50 shadow-none button"><i class="fa fa-print"></i> Print</a>   <a class="btn btn-light border text-black-50 shadow-none button" onclick="downloadDivToPic();"><i class="fa fa-download"></i> Download</a> &nbsp;&nbsp; </div>
                           <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
                           <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                           <script src="https://unpkg.com/2cs-canvas2image@0.0.2/canvas2image.js"></script>
-                          <script src="http://www.1menus.com/theme/b2b/js/printThis/printThis.js"></script>
+                          
                           
                           
                             <script type="text/javascript">
@@ -291,8 +265,20 @@
                                           
                                       }); 
                             };
-                            prniting = function(){
-                                $("#invoiceView").printThis();
+                            prniting = function(){                                
+                                // $("#invoiceView").printThis({
+                                //     importCSS: true,
+                                    
+                                //     loadCSS: "css/vendors.bundle.css",
+                                // });
+                                var printContents = document.getElementById('invoiceView').innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
                                 };
                             </script>
                             

@@ -31,6 +31,7 @@
 	background-color: #102E51!important;
 }
 section#content {
+	padding-top: 0;
 	background-color: #E1F1FF;
 }
 .mobile-menu-toggle i {
@@ -61,15 +62,18 @@ section#content {
 .boxView {
 	margin-top: 30px;
     padding: 10px;
-    border: 1px solid #455B83;
-    border-radius: 15px;	
+    border: 1px solid rgb(0 0 0 / 6%);
+    border-radius: 3px;	
 	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	box-shadow: 4px 4px 0px 2px rgb(0 0 0 / 5%);
+	display: inline-block;
 }
 .sidebar > div, #main.col-md-8 > div{
 	padding: 10px;
     border: 1px solid #455B83;
-    border-radius: 15px;	
+    border-radius: 5px;	
 	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	margin-top: 10px;
 }
 h2 {
 	color: #455B83!important;
@@ -80,17 +84,15 @@ h4{
 	text-align: left;
 }
 .well {
-	margin: 2% 1%;
-    width: 98%;
-    display: inline-block;
 	border-color: #E1F1FF;
+	padding: 5px;
 }
 .well label{
 	font-size: 1em;
 	color: #D9A21B!important;
 }
 .well span{
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: #455B83!important;
 }
 form label {
@@ -108,11 +110,14 @@ form .checkbox label {
 input.input-text, select, textarea, span.custom-select {
 	background-color: #fff;
 }
+input.input-text {
+	border: 1px solid #4c4c4c;
+}
 #logo {
     width: 200px;
     height: auto;
 }
-img {
+img  , iframe{
 	border: 3px solid #E1F1FF;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -130,7 +135,7 @@ img.no {
 	margin-bottom: 0;
 }
 .table-responsive {
-	overflow: hidden;
+	overflow: hidden!important;
 }
 #invoiceView {
     background: #fff;
@@ -228,8 +233,19 @@ border-top-right-radius: 5px;
 	padding: 5px;
 }
 
-.room-list {
-
+.info-view {
+	background-color: #E1F1FF;
+	border: 1px solid rgb(0 0 0 / 6%);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	padding: 5px;
+}
+.info-view h2{
+	background: #112e51;
+    color: #E1F1FF!important;
+    padding: 5px;
+    text-align: center;
 }
 .datepicker-wrap:after  ,
 .selector span.custom-select:before ,
@@ -293,7 +309,20 @@ border-top-right-radius: 5px;
 	.desktopOnly{display: none;}
  }
 @media (min-width: 320px) and (max-width: 768px) {
- 
+	
+	.list-view .actions h3 , .list-view .actions .button , .list-view a {
+		text-align: center!important;
+		float:none!important;
+		width: 100%;
+		display: block;
+	}
+	.tab-container .tab-content .tab-pane {
+		padding: 3px;
+		line-height: 1.7em;
+	}
+	.option-view {
+		padding: 3px!important;
+	}
  }
  @media(min-width: 767px){
  }
@@ -303,4 +332,98 @@ border-top-right-radius: 5px;
 @media (max-width:1200px){
 
 }
+
+@media print{   
+	table, th, td
+{
+  border-collapse:collapse;
+  border: 1px solid black;
+  width:100%;
+  text-align:right;
+}
+table .srno {
+	width: 30px;
+}
+    .invoice-container {
+		padding: 20px!important;
+	}
+	.pull-right {
+        float: right!important;
+    }
+	.col-sm-4 {
+width: 30%;
+float:right;
+
+	}
+	.table-responsive {
+		overflow: hidden!important;
+	}
+	.table {
+		margin-bottom: 0;
+		color: #000;
+		font-size: 1.2em;
+	}
+	.table {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+	table td[class*=col-], table th[class*=col-] {
+		position: static;
+		display: table-cell;
+		float: none;
+	}
+	table td {
+		width: auto;
+	}
+}
 /* End file code */
+
+.list-view {
+	width: 100%;
+}
+.item-row {
+	width: 100%;
+}
+.item-row{
+	padding: 10px;
+	border: 1px solid #4c4c4c;
+	margin-top: 10px;
+	border: 1px solid #ddd;
+    box-shadow: 2px 2px 0px 1px rgb(0 0 0 / 6%);
+	display: inline-block;
+    border-radius: 5px;
+    background: #fff;
+}
+.item-row:hover{
+	background: #E1F1FF;
+	transition:0.5s;	
+	cursor: pointer;
+	border: 1px dotted #455B83;
+}
+.item-row:hover h3{
+	color: #D9A21B;
+	font-size: 2.1em;
+	transition:1s;	
+	
+	
+}
+.item-row small {
+	font-size: 0.5em;
+	padding-left: 10px;
+	text-decoration: underline;
+}
+.item-row h3 {
+	font-size: 2em;
+}
+.link {
+    color: #609cec;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+    border-bottom: 1px dashed #609cec;
+}
+.list-view .actions h3 , .list-view .actions .button {
+	text-align: right;
+	float:right;
+}
