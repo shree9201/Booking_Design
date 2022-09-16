@@ -153,18 +153,18 @@
                                 </div>
                             	</div>
                                 <div class="tab-pane fade in active" id="hotel-availability">
-                                    <form>
+                                    <form class=>
                                     <div class="update-search clearfix">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <label><i class="fas fa-calendar-alt"></i> Check-in date</label>
+                                                    <label><i class="fas fa-calendar-alt"></i> Check-in </label>
                                                     <div class="datepicker-wrap">
                                                             <input type="text" name="date_from" placeholder="mm/dd/yy" class="input-text input-large  full-width" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label><i class="fas fa-calendar-alt"></i> Check-out date</label>
+                                                    <label><i class="fas fa-calendar-alt"></i> Check-out </label>
                                                     <div class="datepicker-wrap">
                                                             <input type="text" name="date_to" placeholder="mm/dd/yy" class="input-text input-large full-width" />
                                                     </div>
@@ -172,7 +172,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <label><i class="fas fa-hotel"></i> Rooms</label>
@@ -211,9 +211,9 @@
                                             </div>
                                         </div>
                                     
-                                        <div class="col-md-12">
+                                        <div class="col-md-4">
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-12"><br>
                                                     <button data-animation-duration="1" data-animation-type="bounce" class="button btn-large text-center full-width animated" type="submit">Check Availability <i class="fa fa-check-circle"></i></button>
                                                 </div>
                                             </div>
@@ -551,6 +551,18 @@
                 tjq(".opacity-overlay").remove();
             });
             
+
+
+            $(window).scroll(function(e){ 
+  var $el = $('.fixedElement'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
+});
 
         });
 
