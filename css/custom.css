@@ -2,3 +2,455 @@
  * Title:   Custom Style File
  * Author:  https://themeforest.net/user/soaptheme 
  */
+
+ /*********************************************************
+/* File Name        : droptech-responsive.css
+// Craeted By       : Vishwajeet Mahadik
+// Created Date     : 06-09-2022
+// File Modified By : Vishwajeet Mahadik
+// Modify  Date     : 06-09-2022
+/* Description      : This is droptech build responsive main file
+/**********************************************************/
+
+/*
+1	#102E51
+2	#455B83
+3	#E1F1FF
+4	#D9A21B	
+*/
+
+@CHARSET "ISO-8859-1";
+    .mobileOnly {display: none;}
+	.tableOnly{display: none;}
+	.desktopOnly{display: none;}
+
+.button {
+	background-color: #D9A21B!important;
+}
+.button:hover , .button:active , .button.active {
+	background-color: #102E51!important;
+}
+section#content {
+	padding-top: 0;
+	background-color: #E1F1FF;
+}
+.mobile-menu-toggle i {
+	font-size: 3em;
+    padding: 15px;
+    float: right;
+    background: #fff;
+    color: #D9A21B;	
+}
+#mobile-primary-menu {
+	padding: 10px;
+}
+#mobile-primary-menu li{
+    position: relative;
+    padding: 10px;
+    font-size: 1.5em;
+    background: #112e51;
+    color: #fff;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+#mobile-primary-menu li:hover{
+	background:#fff;
+    color: #112e51;
+	cursor: pointer;
+	font-size: 2em;
+}
+.boxView {
+	margin-top: 30px;
+    padding: 10px;
+    border: 1px solid rgb(0 0 0 / 6%);
+    border-radius: 3px;	
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	box-shadow: 4px 4px 0px 2px rgb(0 0 0 / 5%);
+	display: inline-block;
+}
+.sidebar > div, #main.col-md-8 > div{
+	padding: 10px;
+    border: 1px solid #455B83;
+    border-radius: 5px;	
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	margin-top: 10px;
+}
+h2 {
+	color: #455B83!important;
+    font-size: 2.3em;
+}
+h4{
+	color: #D9A21B!important;
+	text-align: left;
+}
+.well {
+	border-color: #E1F1FF;
+	padding: 5px;
+}
+.well label{
+	font-size: 1em;
+	color: #D9A21B!important;
+}
+.well span{
+	font-size: 1.2em;
+	color: #455B83!important;
+}
+form label {
+	top: 12px;
+    left: 10px;
+    position: relative;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    font-size: 1em;
+    z-index: 999;
+}
+form .checkbox label {
+	position: initial;    
+}
+input.input-text, select, textarea, span.custom-select {
+	background-color: #fff;
+}
+input.input-text {
+	border: 1px solid #4c4c4c;
+}
+#logo {
+    width: 200px;
+    height: auto;
+}
+img  , iframe{
+	border: 3px solid #E1F1FF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow:#102E51 0px 20px 30px -10px;
+}
+img.no {
+	border: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	box-shadow:#102E51 0px 0px 0px 0px;
+}
+.table.mb-0{
+	margin-bottom: 0;
+}
+.table-responsive {
+	overflow: hidden!important;
+}
+#invoiceView {
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    -webkit-box-shadow: 0 0 0.5cm rgb(0 0 0 / 50%);
+    box-shadow: 0 0 0.5cm rgb(0 0 0 / 50%);
+    background: url(../img/svg/pattern-1.svg) no-repeat center bottom;
+    background-size: cover;
+    padding: 4rem;
+    position: relative;
+}
+.tab-container ul.tabs li.active > a, .tab-container ul.tabs li:hover > a{
+	-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.boxView .tab-pane {
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.tab-container ul.tabs li.active > a{
+    color: #112e51;
+    font-size: 1.5em;
+    background: #fff;
+}
+#hotel-availability .update-search, #cruise-availability .update-search  , .pricing-table{
+    border: 1px solid #112e51;
+    background: #fff;
+    margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#hotel-availability .col-md-6 .col-md-6 , #hotel-availability .col-md-6 .col-md-4 {
+	margin-bottom: 20px;
+}
+.box.box-primary {
+	border-top-color: #112e51;;
+}
+#hotel-availability .room-list > article, #cruise-availability .room-list > article {
+	padding: 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#hotel-availability .room-list .box-title dt, #cruise-availability .room-list .box-title dt, #cruise-food-dinning .food-dinning-list .box-title dt , dd i{
+	color: #D9A21B;
+}
+.badge {
+	background-color:#455B83;
+}
+.smallwell {
+	padding: 10px;
+    margin-top: 20px;
+    background-color: #E1F1FF;
+    border: 1px solid #112e51;
+    border-radius: 4px;
+}
+.price {
+	color: #112e51;
+	font-weight: bold;
+}
+.price small {
+	color: #D9A21B;
+}
+.smallwell:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.hover-effect img {
+	width: 100%;
+	height: auto;
+}
+.smallwell:hover .price{
+	font-size: 3em;
+	transition:1s;	
+}
+.radio input[type=radio] {
+	margin: 0;	
+}
+.radio label {
+	padding:  0 10px;
+}
+.radio label:hover {
+	background-color: aliceblue;
+
+}
+.specialrateSection {
+	border: 1px solid #112e51;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: auto;
+	max-width: 600px;
+	padding: 5px;
+}
+
+.info-view {
+	background-color: #E1F1FF;
+	border: 1px solid rgb(0 0 0 / 6%);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	padding: 5px;
+}
+.info-view h2{
+	background: #112e51;
+    color: #E1F1FF!important;
+    padding: 5px;
+    text-align: center;
+}
+.datepicker-wrap:after  ,
+.selector span.custom-select:before ,
+.ui-datepicker .ui-datepicker-header, 
+.image-carousel.style1 .flex-direction-nav li a{
+	background-color: #D9A21B;
+}
+/* =============================================================================*/
+ /* All type of mobile screen resolution common factor css
+ /* =============================================================================*/
+ @media (min-width: 320px) and (max-width: 	767px) {
+	.mobileOnly {display: block;}
+	.tableOnly{display: block;}
+	.desktopOnly{display: none;}
+.desktop-right-align {
+	float: none;
+}
+}
+
+/* =============================================================================*/
+/* Part-I  Very small devices means Resolution renge (320-480)*/
+/* =============================================================================*/
+ @media (min-width: 320px) and (max-width: 480px) {
+	.mobileOnly {display: block;}
+	.tableOnly{display: none;}
+	.desktopOnly{display: none;}
+}
+
+/* =============================================================================*/
+ /* Part-II  Medium devices means Resolution range (481-800)*/
+ /* =============================================================================*/
+ @media (min-width: 481px) and (max-width: 800px) {
+.mobileOnly {display: block;}
+	.tableOnly{display: none;}
+	.desktopOnly{display: none;}
+}
+
+/* =============================================================================*/
+ /* Part-III  Tablet devices means Resolution range (801-1020)*/
+ /* =============================================================================*/
+ @media (min-width: 320px) and (max-width: 990px) {
+	.mobileOnly {display: block;}
+	.tableOnly{display: block;}
+	.desktopOnly{display: none;}
+	.listing-style3.hotel figure img {
+		width: 100%;
+	}
+	.tab-container ul.tabs li > a, .tab-container ul.tabs li:hover > a {
+		font-size: 1.5em;
+	}
+	.tab-container ul.tabs li.active > a, .tab-container ul.tabs li:hover > a {
+		background: #D9A21B;
+		color: #fff;
+	}
+}
+
+ /* Extra media query created by vishwajeet for extra landscape tablet view */
+ @media (min-width: 768px) and (max-width: 960px) {
+.mobileOnly {display: none;}
+	.tableOnly{display: block;}
+	.desktopOnly{display: none;}
+ }
+@media (min-width: 320px) and (max-width: 768px) {
+	
+	.list-view .actions h3 , .list-view .actions .button , .list-view a {
+		text-align: center!important;
+		float:none!important;
+		width: 100%;
+		display: block;
+	}
+	.tab-container .tab-content .tab-pane {
+		padding: 3px;
+		line-height: 1.7em;
+	}
+	.option-view {
+		padding: 3px!important;
+	}
+	#hotel-availability form{ 
+		position: inherit!important;	
+	}
+	.navbar-brand {
+		float: none;
+		height: 100px !important;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+ }
+ @media(min-width: 767px){
+ }
+ @media (max-width:500px){
+
+}
+@media (max-width:1200px){
+
+}
+
+@media print{   
+	table, th, td
+{
+  border-collapse:collapse;
+  border: 1px solid black;
+  width:100%;
+  text-align:right;
+}
+table .srno {
+	width: 30px;
+}
+    .invoice-container {
+		padding: 20px!important;
+	}
+	.pull-right {
+        float: right!important;
+    }
+	.col-sm-4 {
+width: 30%;
+float:right;
+
+	}
+	.table-responsive {
+		overflow: hidden!important;
+	}
+	.table {
+		margin-bottom: 0;
+		color: #000;
+		font-size: 1.2em;
+	}
+	.table {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+	table td[class*=col-], table th[class*=col-] {
+		position: static;
+		display: table-cell;
+		float: none;
+	}
+	table td {
+		width: auto;
+	}
+}
+/* End file code */
+
+.list-view {
+	width: 100%;
+}
+.item-row {
+	width: 100%;
+}
+.item-row{
+	padding: 10px;
+	border: 1px solid #4c4c4c;
+	margin-top: 10px;
+	border: 1px solid #ddd;
+    box-shadow: 2px 2px 0px 1px rgb(0 0 0 / 6%);
+	display: inline-block;
+    border-radius: 5px;
+    background: #fff;
+}
+.item-row:hover{
+	background: #E1F1FF;
+	transition:0.5s;	
+	cursor: pointer;
+	border: 1px dotted #455B83;
+}
+.item-row:hover h3{
+	color: #D9A21B;
+	font-size: 2.1em;
+	transition:1s;	
+	
+	
+}
+.item-row small {
+	font-size: 0.5em;
+	padding-left: 10px;
+	text-decoration: underline;
+}
+.item-row h3 {
+	font-size: 2em;
+}
+.link {
+    color: #609cec;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+    border-bottom: 1px dashed #609cec;
+}
+.list-view .actions h3 , .list-view .actions .button {
+	text-align: right;
+	float:right;
+}
+#hotel-availability form{
+	position: sticky;
+  top: 0px;
+  z-index: 9;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#hotel-availability .update-search {
+	padding-top: 0px;
+}
+#hotel-features, #cruise-features {
+    margin-top: 0px;
+}
+#main {
+    margin-top: 20px;
+    border-top: 1px solid #102E51;
+}
